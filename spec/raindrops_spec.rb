@@ -47,6 +47,10 @@ describe Raindrops do
     it 'output "Plang" if the number has a factor of 5' do
       expect(raindrops.convert(80)).to eq 'Plang'
     end
+
+    it 'output "Plong" if the number has a factor of 7' do
+      expect(raindrops.convert(14)).to eq 'Plong'
+    end
   end
 
 end
