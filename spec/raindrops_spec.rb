@@ -31,6 +31,10 @@ describe Raindrops do
     it 'output "PlingPlong" if the number has a factor of 3 and 7' do
       expect(raindrops.convert(21)).to eq 'PlingPlong'
     end
+
+    it 'output "PlangPlong" if the number has a factor of 5 and 7' do
+      expect(raindrops.convert(35)).to eq 'PlangPlong'
+    end
   end
 
 end
