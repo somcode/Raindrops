@@ -7,6 +7,10 @@ describe Raindrops do
     it 'responds to method convert with one argument' do
       expect(raindrops).to respond_to(:convert).with(1).argument
     end
+
+    it 'output "Pling" if the number has a factor of 3' do
+      expect(raindrops.convert(6)).to eq 'Pling'
+    end
   end
 
 end
