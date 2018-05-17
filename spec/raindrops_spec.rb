@@ -1,6 +1,5 @@
 require 'raindrops'
 describe Raindrops do
-
   subject(:raindrops) { described_class.new }
 
   describe '#convert' do
@@ -21,7 +20,7 @@ describe Raindrops do
     end
 
     it 'return the numbers digits if the number does not have any factor of 3, 5 and 7' do
-      expect(raindrops.convert(4)).to eq "4"
+      expect(raindrops.convert(4)).to eq '4'
     end
 
     it 'output "PlingPlang" if the number has a factor of 3 and 5' do
@@ -53,8 +52,7 @@ describe Raindrops do
     end
 
     it 'return the numbers digits if the number does not have any factor of 3, 5 and 7' do
-      expect(raindrops.convert(12121)).to eq "12121"
+      expect(raindrops.convert(12121)).to eq '12121'
     end
   end
-
 end
