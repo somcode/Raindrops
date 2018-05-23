@@ -40,7 +40,7 @@ describe Raindrops do
     end
 
     it 'output "Pling" if the number has a factor of 3' do
-      expect(raindrops.convert(9)).to eq 'Pling'
+      expect(raindrops.convert(3)).to eq 'Pling'
     end
 
     it 'output "Plang" if the number has a factor of 5' do
@@ -53,6 +53,10 @@ describe Raindrops do
 
     it 'return the numbers digits if the number does not have any factor of 3, 5 and 7' do
       expect(raindrops.convert(12121)).to eq '12121'
+    end
+
+    it 'return "PlingPlung" if the number has a factor of 9' do
+      expect(raindrops.convert(9)).to eq 'PlingPlung'
     end
   end
 end
